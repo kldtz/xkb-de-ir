@@ -1,0 +1,10 @@
+<variant>
+    <configItem>
+    <name>ir</name>
+    <shortDescription>ir</shortDescription>
+    <description>Persian (Germany, phonetic)</description>
+    <languageList>
+        <iso639Id>fas</iso639Id>
+    </languageList>
+    </configItem>
+</variant>

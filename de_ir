@@ -1,0 +1,56 @@
+// Layout for Persian letters on a German keyboard.
+
+partial alphanumeric_keys
+xkb_symbols "ir" {
+
+    include "de(basic)"
+
+    name[Group1]= "Persian (Germany, phonetic)";
+    
+    // First row (numbers)
+    key <AE01> { [ Farsi_1                              ] };
+    key <AE02> { [ Farsi_2,        guillemotright       ] };
+    key <AE03> { [ Farsi_3,        guillemotleft        ] };
+    key <AE04> { [ Farsi_4                              ] };
+    key <AE05> { [ Farsi_5                              ] };
+    key <AE06> { [ Farsi_6                              ] };
+    key <AE07> { [ Farsi_7                              ] };
+    key <AE08> { [ Farsi_8                              ] };
+    key <AE09> { [ Farsi_9                              ] };
+    key <AE10> { [ Farsi_0                              ] };
+    key <AE11> { [ Arabic_shadda,  Arabic_question_mark ] };
+
+    // Letters, diacritics etc.
+    key <LatA> { [ Arabic_alef,         Arabic_maddaonalef                              ] };
+    key <LatB> { [ Arabic_beh,          VoidSymbol                                      ] };
+    key <LatC> { [ Arabic_tcheh,        VoidSymbol                                      ] };
+    key <LatD> { [ Arabic_dal,          VoidSymbol                                      ] };
+    key <LatE> { [ Arabic_ain,          Arabic_hamza                                    ] };
+    key <LatF> { [ Arabic_feh,          VoidSymbol                                      ] };
+    key <LatG> { [ Arabic_gaf,          VoidSymbol                                      ] };
+    key <LatH> { [ Arabic_heh,          Arabic_hah,             Arabic_tehmarbuta       ] };
+    key <LatI> { [ Farsi_yeh,           VoidSymbol                                      ] };
+    key <LatJ> { [ Arabic_jeem,         Arabic_jeh                                      ] };
+    key <LatK> { [ Arabic_keheh,        Arabic_kaf                                      ] };
+    key <LatL> { [ Arabic_lam,          VoidSymbol                                      ] };
+    key <LatM> { [ Arabic_meem,         VoidSymbol                                      ] };
+    key <LatN> { [ Arabic_noon,         VoidSymbol                                      ] };
+    key <LatO> { [ Arabic_damma,        Arabic_sukun                                    ] };
+    key <LatP> { [ Arabic_peh,          VoidSymbol                                      ] };
+    key <LatQ> { [ Arabic_qaf,          Arabic_ghain                                    ] };
+    key <LatR> { [ Arabic_ra,           Arabic_hamzaonalef                              ] };
+    key <LatS> { [ Arabic_seen,         Arabic_sad                                      ] };
+    key <LatT> { [ Arabic_teh,          Arabic_tah                                      ] };
+    key <LatU> { [ Arabic_dad,          Arabic_zah                                      ] };
+    key <LatV> { [ Arabic_waw,          Arabic_hamzaonwaw                               ] };
+    key <LatW> { [ Arabic_sheen,        Arabic_hamzaunderalef                           ] };
+    key <LatX> { [ Arabic_khah,         VoidSymbol                                      ] };
+    key <LatY> { [ Farsi_yeh,           Arabic_yeh                                      ] };
+    key <LatZ> { [ Arabic_zain,         Arabic_thal,            Arabic_theh             ] };
+    key <AC10> { [ Arabic_kasra,        Arabic_kasratan                                 ] };
+    key <AD11> { [ Arabic_hamza_above,  Arabic_hamza_below                              ] };
+    key <AC11> { [ Arabic_fatha,        Arabic_fathatan,        Arabic_superscript_alef ] };
+    key <AB08> { [ Arabic_comma,        Arabic_semicolon                                ] };
+
+    include "level3(ralt_switch)"
+};
